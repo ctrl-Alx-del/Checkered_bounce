@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+}
+
+.boxAnimate{
+    animation: bounce 2s forwards;
+}
+
+.Checkered_Wrapper div:nth-child(odd){
+    background-color: grey;
+}
+
+.Checkered_Wrapper {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+@keyframes bounce {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-5rem);}
+}
